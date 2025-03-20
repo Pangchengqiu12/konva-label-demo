@@ -95,7 +95,7 @@ import { useSelect } from '../../hooks/useSelect.js';
 import { useLabelConfigStore } from '@/store';
 const { config } = toRefs(useLabelConfigStore());
 const { setConfig } = useLabelConfigStore();
-const { options, filterOption } = useSelect();
+const { options } = useSelect();
 import { useKonvaLabel } from '../../hooks/useKonvaLabel.js';
 const {
   updateSelectOpacity,
@@ -139,11 +139,11 @@ function colorTabHandler(obj: ColorTab) {
   updateLabelColor();
 }
 //选择边框颜色
-function colorChange(e) {
+function colorChange(e: any) {
   setConfig('color', e.target.value);
   updateLabelColor();
 }
-function isShowHandler(obj) {
+function isShowHandler(obj: any) {
   obj.rect.visible(!obj.rect.visible());
   obj.text.visible(!obj.text.visible());
 }

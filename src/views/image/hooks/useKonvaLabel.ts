@@ -64,7 +64,7 @@ interface LabelInfo {
   classId: number | string;
   color?: string;
 }
-const rectList = ref([]); //标注框列表
+const rectList = ref<any[]>([]); //标注框列表
 const { config } = toRefs(useLabelConfigStore()); //标注属性配置
 const konvaLabel = ref<InstanceType<typeof Konvalabel> | null>(null); // Konvalabel实例
 const tool = ref<string>('dragOutlined'); // 当前的工具
