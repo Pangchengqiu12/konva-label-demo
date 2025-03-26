@@ -21,18 +21,8 @@ async function getPreivew() {
       data: [],
     },
     {
-      id: '2',
-      img: '/images/白鹭5.jpg',
-      data: [],
-    },
-    {
       id: '3',
       img: '/images/白鹭9.jpg',
-      data: [],
-    },
-    {
-      id: '4',
-      img: '/images/白鹭38.jpg',
       data: [],
     },
     {
