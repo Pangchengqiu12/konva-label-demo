@@ -1,4 +1,5 @@
 import Konvalabel from 'konva-label';
+// import  Konvalabel from '@/utils/konvaLabel/index.ts'
 import { useLabelConfigStore } from '@/store';
 import { ref, toRefs } from 'vue'; // Import types for Konvalabel
 import { colorList } from '../data';
